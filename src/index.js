@@ -9,6 +9,8 @@ mongoose.connect('mongodb://otiagoluz:macmini123@cluster0-shard-00-00-cioa8.mong
     useUnifiedTopology: true,     
 });
 
+mongoose.set('useCreateIndex', true);
+
 app.use(express.json());
 app.use(routes);
 
